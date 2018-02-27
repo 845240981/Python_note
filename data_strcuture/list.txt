@@ -1,0 +1,11 @@
+找到列表中出现次数最多的数:
+test = [1, 2, 3, 4, 2, 2, 3, 1, 4, 4, 4, 4]
+print(max(set(test), key=test.count)) 4
+
+max(iterable, key, default) 求迭代器的最大值，
+其中iterable 为迭代器，max会for i in … 遍历一遍这个迭代器，
+然后将迭代器的每一个返回值当做参数传给key=func 中的
+func(一般用lambda表达式定义) ，然后将func的执行结果
+传给key，然后以key为标准进行大小的判断。
+
+其实最简单是用counter(test).most_common(1)

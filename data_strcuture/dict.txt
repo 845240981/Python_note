@@ -1,0 +1,10 @@
+﻿用字典来存储简单的表达式：
+stdcalc = {
+    "sum": lambda x, y: x + y,
+    "subtract": lambda x, y: x - y
+}
+print(stdcalc["sum"](9, 3))  ##12
+print(stdcalc["subtract"](9, 3)) ##6
+
+
+
